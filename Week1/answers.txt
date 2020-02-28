@@ -1,0 +1,8 @@
+1. mkdir .folderName //create hidden folder
+   touch .fileName.txt // create hidden file
+   ls -a // display hidden files
+   ls -al // lists all files including hidden and not hidden
+2. mkdir -p mainFolder/{subFolder1/{f1,f2,f3},subFolder2,subFolder3}
+3. echo first message >> fileName.txt
+   echo second message >> fileName.txt  
+   

@@ -1,0 +1,204 @@
+body {
+    background-color: white;
+    color:#000035;
+}
+#profilePhoto{
+ width: 80px;
+ height: 80px;
+ border-radius: 100%;
+ 
+}
+
+#topDiv{
+    position: sticky;
+    top:10px;
+    left:5px;
+    height: 20px;
+    /*border: 2px solid black;*/
+}
+#nav-bar {
+    float: right;
+    width: 70%;
+    margin: 25px 10px 10px 0px;
+    border-bottom: 1px solid #000035;
+
+
+    
+}
+#nav-bar ul {
+ list-style: none;
+}
+#nav-bar li{
+    display: inline-block;
+    background-color: white;
+    color: #000035;
+    margin: 10px;
+    padding: 10px;
+
+}
+#nav-bar li:hover{
+    background-color: azure;
+    color: #000035 ;
+    transition: 3ms;
+
+}
+#nav-bar li a {
+    text-decoration: none;
+    text-decoration-style: none;
+    color:#000035;
+
+}
+#nav-bar li a:hover{
+    color:#000035 ;
+    background-color: azure;
+}
+
+
+#rightSide{
+   float: right; 
+    text-align: center;
+    background-color: white;
+    width:70%;
+    padding:30px;
+    margin:100px 0px 0px 0px;
+    justify-content: center;
+}
+#leftSide {
+    float: left;
+    background-color:#000035;
+    color:white;
+    padding:100px 10px 10px 70px;
+    margin: 0px;
+    width:20%;
+    
+
+}
+#leftSide h2 {
+margin: 20px 20px 50px 20px;
+padding:20px;
+}
+.infoTable {
+    border: 3px solid #000035;
+    text-align: left;
+    margin-left: 24%;
+    height: 100px;
+    padding:10px;
+    font-weight: bold ;
+    box-sizing: 50%;
+    font-size: 20px;
+    line-height: 70px;
+    column-gap: 100px;
+    justify-content: center;
+}
+
+#social {
+    position: sticky ;
+    top: 20px;
+    left: 85%;
+    width: 10%;
+
+}
+
+/* Style all font awesome icons based on www.w3schools.com*/
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+     border-radius: 50%;
+  
+  }
+  
+  /* Add a hover effect  */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+   .part{
+    float:left;
+    margin:100px 10px 0px 200px; 
+    align-content: center;
+   }
+   .part h2 {
+    border-bottom: 1px solid #000035;
+    padding:10px;
+    margin:10px;
+}
+.part p{
+background-color: azure;
+line-height: 40px;
+padding:10px;
+margin:10px;
+
+}
+.part table {
+column-gap: 100px;
+line-height: 60px;
+justify-content: center;
+width: 800px;
+background-color: azure;
+}
+#hobbies{
+    line-height: 50px;
+    width: 70px;
+}
+#projects{
+    line-height: 60px;
+    width:80%;
+}
+#footer {
+ display: block;
+ width:100%;
+ float: left;
+ background-color: azure; 
+ text-align: center;
+ margin-top: 15px;
+ padding:10px;
+
+}
+.bar{
+    width: 220px;
+    height: 10px;
+    background-color: gray;
+    box-sizing: border-box;
+}
+
+.arabic{
+    width:95%;
+    height: 10px;
+    background-color: blue;
+}
+.turkish{
+    width:70%;
+    height: 10px;
+    background-color: blue;
+}
+.english{
+    width:66%;
+    height: 10px;
+    background-color: blue;
+}
+.dutch{
+    width:12%;
+    height: 10px;
+    background-color: blue;
+}
+.french{
+    width:10%;
+    height: 10px;
+    background-color: blue;
+}
