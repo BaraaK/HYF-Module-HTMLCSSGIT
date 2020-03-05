@@ -7,7 +7,6 @@ body {
     font-family: 'Raleway', sans-serif;
     src: url('https://fonts.googleapis.com/css?family=Raleway&display=swa');
 
-
 }
 
 /*Global*/
@@ -22,8 +21,6 @@ h1 {
     margin: 0;
     padding: 5px;
     text-shadow: black ;
-
-
 }
 h2 {
     text-align: left;
@@ -31,7 +28,6 @@ h2 {
     width: 100%;
     color:#DDAE35;
     margin: 10 10 10 20px;
-
 }
 
 ul {
@@ -50,8 +46,7 @@ h3{
     background-color: #EFF9C0;
     color: #2F263A;
     padding: 2px;
-    margin: 0;
-    
+    margin: 0;   
 }
 
 p{
@@ -70,41 +65,7 @@ p{
     margin:0;
     transition: .3s ease-in-out;
     line-height: 30px;
-    
-
 }
-
-/*
-p {
-    position: inherit;
-    top:0;
-    bottom: 0;
-    background: rgba(221, 160, 53, 0.6); /* orange see-through */
-    /*width: 90%;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;     opacity:0; /*make the title completely transparent.*/
-    /*color: #2F263A;
-    font-size: 20px;
-    padding: 27px;
-    text-align: center;
-    overflow: hidden;
-    
-}
-/* When you mouse over the container, fade in the overlay title */
-/*.grid-item:hover > p {
-    opacity: 1; /*make the title not transparent at all*/
-    /*z-index: 2;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-   -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out; 
-  }
-  img:hover {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-  } */
 
 section {
     padding-left: 0px;
@@ -113,6 +74,7 @@ section {
 }
 
 /*IDs*/
+
 #grid-floats {
     display:relative;
     width: 100%;
@@ -141,6 +103,7 @@ section {
     
 }
 /* media queries*/
+/* tablet*/
 @media screen and (max-width: 1024px) and (min-width: 600px) , (orientation:landscape) {
     .grid-item {
         min-height: 260px;
@@ -231,6 +194,7 @@ section {
 }
 
 }
+/* desktop*/
 @media screen and (min-width: 1025px) {
     .grid-item {
         min-height: 265px;
