@@ -14,15 +14,20 @@
     <header id="header">
        
         <nav class="nav" >
-        <div class="left-nav">
-        <ul>
-           <li><i class="fas fa-bars"></i>
+        <div >
+        <ul class="left-nav">
+           <li><i id="burger" class="fas fa-bars"></i>
            </li>
            <li><span> <a href="#"> Think with </a> </span></li>
-           <li id="logo"><a href="#"><img  src="logo.jpg" alt="" width="150px" height="100px"> </a></li>
+           <li id="logo"><img  src="logo.jpg" alt="" width="200px" height="80px"></li>
+           <li id="li-to-hide-l1249" onclick="myFunction()">click<div id="myDropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div></li>
         </ul>
     </div> 
-        <div class="search-icon"><i class="fas fa-search"></i></div>
+        <div class="search-icon"><i class="fas fa-search "></i></div>
         <div><button class="Subscribe" id="nav-btn-subs">Subscribe</button></div>
         </nav>
     </header>
@@ -32,7 +37,7 @@
             <p>Take your marketing further with Google. Think with Google.</p>
         </div>
         <div class="page-container">
-            <section class="page-section">
+            <section class="page-section Feature">
                 <div>
                     <a><img  id ="corona-img"src="https://storage.googleapis.com/twg-content/images/homepage-feature_6gMHZxS.width-1600.jpg" ></a>
                 </div>
@@ -110,11 +115,11 @@
             <section class="page-section">
                 <h2>Global Insights</h2>
                 <div class="card">
-                        <ul style="padding: 0%;  list-style: none;">
-                            <li class="">
+                        <ul class="global-insights" style="padding: 0%;  list-style: none;">
+                            <li class="global-card">
                                 <div class="card-img img-hide-m600" ><img style="width: 700px; height: 500px; border-radius: 5%; padding-bottom: 5px;" src="https://storage.googleapis.com/twg-content/images/1745_thumbnail_Primer_WFH.width-1600.jpg" alt="lazy load"></div>
                             </li>
-                            <li class="tut tutorial-1" >
+                            <li class=" tut tutorial-1" >
                                 <a href="#">
                                 <div class="tut-header ">
                                     <span>Tutorial</span>
@@ -124,7 +129,7 @@
                                 </div>
                                 </a>
                             </li>
-                            <li class=" tut tutorial-2" >
+                            <li class="tut tutorial-2" >
                                 <a href="#">
                                 <div class="tut-header">
                                     <span>Tutorial</span>
@@ -135,7 +140,7 @@
                                 </a>
                             </li>
                             <div class="card-ul">
-                            <li class="card-item" >
+                            <li class=" card-item" >
                                 <a href="#">
                                  <div class="img-hide-l600"><img class="img-m600px" src="https://storage.googleapis.com/twg-content/images/1734_thumbnail_International-Womens-Day.width-800.jpg"></div>   
                                 <div class="card-header">
@@ -201,10 +206,11 @@
             <section class="page-section">
                 <div>
                     <h3>In-depth reading</h3>
-                    <div class="card">
-                        <ul>
+                    <div >
+                        <ul class="card-indepth">
                             <li class="card-item-read"><a href="#">
                                 <div><h3>Marketing on Youtube</h3></div>
+                                <div><p>Dig into new consumer trends, explore YouTube ad effectiveness research, and learn how brands are innovating with online video marketing.</p></div>
                                 <div><span><i class="far fa-clone"></i>18 Items</span></div>
                             </a></li>
                             <li class="card-item-read"><a href="#">
@@ -316,4 +322,25 @@
         </footer></div>
     </main>
 </div>
+<script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#li-to-hide-l1249')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
     </body>
+    
+    </html>
